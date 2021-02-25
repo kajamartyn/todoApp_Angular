@@ -1,0 +1,21 @@
+@import '_base';
+.app
+{
+    background-color: $gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper
+{
+    width: 80%;
+    height: 70vh;
+    background-color: $white;
+    border-radius: 30px;
+}
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+}
