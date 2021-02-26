@@ -1,0 +1,39 @@
+@import "_base";
+.search
+{
+    &-wrapper
+    {
+        margin-top: 67px;
+    }
+    &-input
+    {
+        width: 350px;
+        height: 45px;
+        border-radius: 25px;
+        padding-left: 35px;
+        background-color: $gray;
+        border: none;
+    }
+    &-btn
+    {
+        width: 123px;
+        height: 45px;
+        margin-left: 21px;
+        border-radius: 25px;
+        background: url('../../assets/plus.svg') no-repeat;
+        background-position: 85px center;
+        background-color: $primary;
+        text-transform: uppercase;
+        font-size: $font-button;
+        font-weight: 700;
+        border: none;
+        color: $white;
+        text-align: left;
+        padding-left: 25px;
+        &:hover
+        {
+            cursor: pointer;
+        }
+    }
+
+}
