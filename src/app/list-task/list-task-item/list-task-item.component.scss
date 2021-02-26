@@ -1,0 +1,47 @@
+// <div class="item">
+//     <div class="item-left">
+//         <span class="item-check"></span>
+//         <p class="item">Nauka angielskiego</p>
+//     </div>
+//     <div class="item-right">
+//         <span class="item-basket"></span>
+//     </div>
+// </div>
+@import '_base';
+
+.item
+{
+    padding: 30px 0;
+    border-top: 1px solid $gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-check
+    {
+        background: url('../../../assets/checkbox.svg') no-repeat;
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+    }
+    &-basket
+       {
+        background: url('../../../assets/kosz.svg') no-repeat;
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+    }
+    &-left
+    {
+        display: flex;
+        align-items: center;
+    }
+    &-title
+    {
+        margin-left: 26px;
+        font-size: $font-listItem;
+        font-weight: 300;
+    }
+}
+
+
