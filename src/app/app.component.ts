@@ -8,12 +8,19 @@ import {Task} from './models/task';
 export class AppComponent {
 //deklaracja tablicy trzymającej wszystkie zadania w programie
 tasks:Task[]=[];
+//counter to licznik po ang.
+counter = 0;
 addTaskitem(name:string)
 {
+  this.counter++ 
   this.tasks.push({
-    id:this.tasks.length+1,
+    id:this.counter,
     name:name,
     status:false
   })
+}
+deletetask( tasks:Task[]):void {
+  this.tasks = tasks;
+  
 }
 }

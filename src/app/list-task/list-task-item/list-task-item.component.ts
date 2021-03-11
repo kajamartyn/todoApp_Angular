@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
+
 import { Task } from 'src/app/models/task';
 
 @Component({
@@ -8,9 +10,17 @@ import { Task } from 'src/app/models/task';
 })
 export class ListTaskItemComponent implements OnInit {
  @Input() task : Task;
+ @Output() check = new EventEmitter<number>();
+ @Output() deleteTask = new EventEmitter<number>();
   constructor() { }
 
   ngOnInit(): void {
   }
+  mark():void{
+    this.check.emit(this.task.id);
+  }
+  delete():void{
+    this.deleteTask.emit(this.task.id);
 
+  }
 }

@@ -3,7 +3,7 @@
        <div class="container">
         <app-header></app-header>
         <app-search (addTask)="addTaskitem($event)" ></app-search>
-        <app-list-task [tasks]="tasks" ></app-list-task>
+        <app-list-task [tasks]="tasks" (deletefromArray)="deletetask($event)"></app-list-task>
        </div>
    </div>
 </div>

@@ -1,9 +1,9 @@
 <div class="item">
     <div class="item-left">
-        <span class="item-check"></span>
-        <p class="item-title">{{ task.name }}</p>
+        <span class="item-check" (click)="mark()"></span>
+        <p class="item-title" [ngStyle]="task.status ? {'color':'green'} :  {'color':'red'}">{{ task.name }}</p>
     </div>
     <div class="item-right">
-        <span class="item-basket"></span>
+        <span class="item-basket"  (click)="delete()"></span>
     </div>
 </div>

@@ -2,7 +2,7 @@
     <h2 class="list-header">Wszystkie zadania </h2>
     <ng-container *ngIf="tasks.length>0">
          <ng-container *ngFor="let task of tasks"> 
-            <app-list-task-item [task]="task"></app-list-task-item>
+            <app-list-task-item [task]="task" (check)="mark($event)" (deleteTask)="deleteItem($event)" ></app-list-task-item>
          </ng-container>
     </ng-container>
 </section>
