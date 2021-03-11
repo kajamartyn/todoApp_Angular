@@ -2,8 +2,8 @@
    <div class="wrapper">
        <div class="container">
         <app-header></app-header>
-        <app-search></app-search>
-        <app-list-task></app-list-task>
+        <app-search (addTask)="addTaskitem($event)" ></app-search>
+        <app-list-task [tasks]="tasks" ></app-list-task>
        </div>
    </div>
 </div>
